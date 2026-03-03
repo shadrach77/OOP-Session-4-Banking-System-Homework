@@ -18,7 +18,7 @@ public class Bank {
       for (int i=0; i<numberOfCustomers; i++){
         Customer currCustomer = customers.get(i);
         if (firstName.equals(currCustomer.getFirstName())){
-          return String.format("=====\nCustomer Details:\nFirst Name: %s\nLast Name:%s\nBalance: %s\n=====", currCustomer.getFirstName(), currCustomer.getLastName(), currCustomer.getAccount().getBalance());
+          return String.format("=====\nCustomer Details:\nFirst Name: %s\nLast Name:%s\n=====", currCustomer.getFirstName(), currCustomer.getLastName());
         }
       }
       return "Customer with first name" + firstName + "not found";
